@@ -60,11 +60,11 @@ All results are saved in a CSV file (default: `smbscan_results.csv`). Each row c
 
 ## Example CSV Output
 
-```csv
-IP,Share,UNC,Readable,Writable,Status,Error,SampleDirs,SampleFiles
-10.7.1.6,Public,\\10.7.1.6\Public,True,False,ok,,"Docs;Finance","report1.docx;data.csv"
-10.7.1.15,,,False,False,no_smb_listener,tcp/445 closed or filtered,,
-```
+| IP        | Share  | UNC             | Readable | Writable | Status          | Error                        | SampleDirs     | SampleFiles                |
+|-----------|--------|-----------------|----------|----------|-----------------|------------------------------|----------------|----------------------------|
+| 10.7.1.6  | Public | \\10.7.1.6\Public | True     | False    | ok              |                              | Docs;Finance   | report1.docx;data.csv      |
+| 10.7.1.15 |        |                 | False    | False    | no_smb_listener | tcp/445 closed or filtered   |                |                            |
+
 
 ---
 
